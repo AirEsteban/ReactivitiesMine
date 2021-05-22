@@ -1,0 +1,12 @@
+{
+    "editor.rulers": [
+    
+    ],
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 2,
+    "scm.alwaysShowActions": true,
+    "scm.alwaysShowRepositories": true,
+    "csharp.semanticHighlighting.enabled": true,
+    "omnisharp.enableImportCompletion": true,
+    "razor.trace": "Messages"
+}
