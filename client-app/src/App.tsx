@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import axios from 'axios'
+//import '../semantic/dist/semantic.css'
+import { Header, Icon, List } from 'semantic-ui-react';
 /*;
 import { ducks } from './demo';
 import DuckItem from './DuckItem'
@@ -19,17 +20,19 @@ function App() {
     })
   }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <ul>
+    <div>
+      <Header as='h2' textAlign='center'>
+        <Icon name='users' />
+        <Header.Content>Reactivities</Header.Content>
+      </Header>
+        <List>
         {
           activities.map((activity: any) => (
-            <li key={activity.id}>{activity.title}</li>
+            <List.Item key={activity.id}>{activity.title}</List.Item>
+            
           ))
         }
-        </ul>
-      </header>
+        </List>
     </div>
   );
 }
